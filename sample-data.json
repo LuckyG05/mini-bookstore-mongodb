@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "price": 499,
+    "reviews": [
+      { "user": "Lucky", "rating": 5 },
+      { "user": "Sam", "rating": 4 }
+    ]
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "price": 399,
+    "reviews": [
+      { "user": "Lucky", "rating": 5 }
+    ]
+  }
+]
