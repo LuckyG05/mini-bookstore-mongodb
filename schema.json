@@ -1,0 +1,46 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "title",
+      "author",
+      "price",
+      "reviews"
+    ],
+    "properties": {
+      "title": {
+        "bsonType": "string"
+      },
+      "author": {
+        "bsonType": "string"
+      },
+      "price": {
+        "bsonType": "number",
+        "minimum": 0
+      },
+      "reviews": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "required": [
+            "user",
+            "rating"
+          ],
+          "properties": {
+            "user": {
+              "bsonType": "string"
+            },
+            "rating": {
+              "bsonType": "int",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "comment": {
+              "bsonType": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
